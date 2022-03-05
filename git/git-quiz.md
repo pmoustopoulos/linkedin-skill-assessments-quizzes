@@ -770,3 +770,116 @@ Which of the following options is correct ?
 - [ ] -d deletes the current commit head, while -D deletes the entire branch.
 - [x] -d deletes the local branch, while -D deletes the local branch regardless of push and merge status.
 - [ ] -D deletes the current commit head, while -d deletes the entire branch.
+
+#### Q95. You stashed three sets of changes but cannot remember the contents of the first stash entry. What command would you use to see the details of the changes in the first of the three stash entries?
+
+- [ ] git stash show -p
+- [ ] git stash show -p stash@{2}
+- [ ] git stash list
+- [ ] git stash show -p stash@{1}
+
+#### Q96. When is the `cherry-pick`command used?
+
+- [ ] when the HEAD needs to be reset to a specific commit
+- [ ] when a commit from one branch needs to be copied into another branch
+- [ ] when a specific commit needs to be pulled down from the remote repository
+- [ ] when a hook script needs to be invoked
+
+#### Q97. After accidentally deleting a branch in your local repository, how can you recover it?
+
+- [ ] Execute `git checkout -b <branchname>`
+- [ ] Find the hash of the branch with the `log` command, then execute `git checkout -b <branchname> <hash>`
+- [ ] Find the hash of the branch with the `reflog` command, then execute `git checkout -b <branchname> <hash>`
+- [ ] It cannot be recovered
+
+#### Q98. How would you delete a remote branch in your repository?
+
+- [ ] Use `git push <remote_name> --delete <branch_name>`
+- [ ] Use `git push <remote_name> --D`
+- [ ] Use `git --delete <branch_name>`
+- [ ] Use `git push <remote_name> --d <branch_name>`
+
+#### Q99. What would happen if you ran the `git reset testfile.js` command?
+
+- [ ] testfile.js would be reverted to its last saved copy.
+- [ ] testfile.js would be reverted to a blank file.
+- [ ] testfile.js would be reset to its first saved state.
+- [ ] testfile.js would be removed from the stage/index area, if present.
+
+#### Q100. What command creates a near-exact copy of the entire repository from a server?
+
+- [ ] `git clone <url>`
+- [ ] `git replicate <url>`
+- [ ] `git pull <url>`
+- [ ] `git checkout <url>`
+
+#### Q101. What is the default setting of `git reflog` when no subcommands are specified?
+
+- [ ] update
+- [ ] expire
+- [ ] show
+- [ ] delete
+
+#### Q102. What situation can occur when attempting to combine branches containing changes to the same piece of code?
+
+- [ ] lost code
+- [ ] collisions
+- [ ] merge conflict
+- [ ] automatic override
+
+#### Q103. After staging changes to several files, you realize the changes to the config.properties file are incorrect, and need to be removed from the stage and working directory. What command can you use to remove the staged changes to the file?
+
+- [ ] `git checkout HEAD -- config.properties`
+- [ ] `git rm config.properties`
+- [ ] `git -rf config.properties`
+- [ ] `git reset HEAD^ -- config.properties`
+
+#### Q104. What command finds the HEAD of the current branch?
+
+- [ ] `git log --head`
+- [ ] `git hash --head`
+- [ ] `git show-ref --head`
+- [ ] `git head --verify`
+
+#### Q105. What statement best describes Git's concept of HEAD?
+
+- [ ] a pointer to the master branch
+- [ ] a pointer to the most recently changed file in the stage/index
+- [ ] a pointer to where the repository is stored in memory
+- [ ] a pointer to the most recent commit in the currently checked-out branch
+
+#### Q106. What command takes changes from the master branch on the remote repository origin and merges them to the local checked-out branch?
+
+- [ ] `git push origin master`
+- [ ] `git pull origin master`
+- [ ] `git commit -u origin`
+- [ ] `git checkout origin`
+
+#### Q107. What command would you use to stage changes to the index strictly for properties files in the current directory?
+
+- [ ] `git add properties`
+- [ ] `git add *.properties`
+- [ ] `git add .properties`
+- [ ] `git add %.properties`
+
+#### Q108. How would you describe a forked repository?
+
+- [ ] a separate copy of a repository
+- [ ] a feature branch of a repository
+- [ ] a deleted or archived copy of a repository
+- [ ] a beta release branch of a repository
+
+#### Q109. What command can you use to remove untracked files from the working directory?
+
+- [ ] `git checkout .`
+- [ ] `git rm --cached`
+- [ ] `git rm -all`
+- [ ] `git clean -df`
+
+#### Q110. What are untracked files?
+
+- [ ] files in the remote repository that Git does not know about because they have not been tagged
+- [ ] files in the local repository that have not been merged into the master branch
+- [ ] staged files that Git does not know about because they have not been commited
+- [ ] files in the working directory that Git does not know about because they have not been staged or committed
+
